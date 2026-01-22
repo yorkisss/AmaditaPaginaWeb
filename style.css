@@ -20,6 +20,9 @@
     justify-content: center;
     gap: 30px;
     font-size: 18px; 
+    position: fixed;
+    z-index: 2;
+    
   
      
 }
@@ -48,17 +51,25 @@
     gap: 40px; 
     font-size: 18px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    z-index: 2;
      
      
 }
-
+/*
+.header{
+  position: fixed; error
+}
+  */
 .logo {
     position: absolute; 
     left: 50px;         
     bottom: 645px;          
     z-index: 9999;  
     height: 90px;      
-    width: 150px;    
+    width: 150px;  
+    position: fixed;
+    
     
 }
 
@@ -737,7 +748,7 @@ a:link, a:visited {
         height: auto;
         width: 100%;
         position: relative;
-        right: 33px;
+        bottom: 265px;
     }
 
     .mvp {
@@ -812,30 +823,69 @@ a:link, a:visited {
         flex-direction: column;
     }
 
-    .testimonios h1, .pas1, .pas2, .idk {
-       
+     .pas2, .idk {
+       position: relative;
+       top: 300px;
         margin: 20px auto;
         width: 95%;
     }
-
-
-    .atencion1, .result, 
-    .pruebas,  .empleo{
-        position: relative;
-        width: 150px;
-        height: 150px;
-         flex-direction: column;
-      
-    }
-    .atencion, .result1, .empleo1, .pruebas1{
-      width: 50px;
-      height: 50px;
-       flex-direction: column;
-    }
-    .pas img{
+    .idk h1 p{
       position: relative;
-      bottom: 30px;
+      top: 100px;
     }
+    .testimonios h1{
+      position: relative;
+      top: 50px;
+    }
+    .barra6{
+      position: relative;
+      top: 150px;
+    }
+    .pas, .pas1{
+      position: relative;
+      top: 70px;
+     
+    }
+    
+    .pas1 h1 {
+      position: relative;
+      top: 100px;
+    }
+    .pas1 p{
+        position: relative;
+      top: 100px;
+    }
+    .pas2 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 20px;              
+        width: 100% ;
+        position: relative ;
+        margin: 40px auto ;
+        padding: 0 10px;
+    }
+
+    
+    .atencion1, .atencion, 
+    .result, .result1, 
+    .pruebas, .pruebas1, 
+    .empleo, .empleo1 {
+        position: static ; 
+        width: 90% ;       
+        height: auto ;    
+        margin: 10px auto ;
+        left: 0 ;
+        bottom: 0 ;
+        transform: none ;  
+    }
+
+    
+    .pas2 img {
+        max-width: 100%;
+        display: block;
+    }
+ 
     .fo, .fot {
         position: static;
         width: 90%;
@@ -844,6 +894,8 @@ a:link, a:visited {
 
     .video iframe {
         height: 250px;
+        position: relative;
+        left: 20px;
     }
 
     .footer-columns-container {
