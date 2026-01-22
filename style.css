@@ -56,11 +56,8 @@
      
      
 }
-/*
-.header{
-  position: fixed; error
-}
-  */
+
+
 .logo {
     position: absolute; 
     left: 50px;         
@@ -175,6 +172,7 @@ a:link, a:visited {
     background-color: #f3f0f0;
     border-radius: 10px;
     box-sizing: border-box;
+   
     
 }
 
@@ -748,7 +746,7 @@ a:link, a:visited {
         height: auto;
         width: 100%;
         position: relative;
-        bottom: 265px;
+        bottom: 285px;
     }
 
     .mvp {
@@ -829,10 +827,11 @@ a:link, a:visited {
         margin: 20px auto;
         width: 95%;
     }
-    .idk h1 p{
+    .idk h1 {
       position: relative;
-      top: 100px;
+      top: 5px;
     }
+    
     .testimonios h1{
       position: relative;
       top: 50px;
@@ -885,7 +884,16 @@ a:link, a:visited {
         max-width: 100%;
         display: block;
     }
- 
+    .servicios-container{
+      position: relative;
+      bottom:100px;
+    }
+    .nav1, .nav2{
+      position: fixed;
+    }
+    .logo {
+      z-index: 2;
+    }
     .fo, .fot {
         position: static;
         width: 90%;
